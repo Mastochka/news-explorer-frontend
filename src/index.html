@@ -18,20 +18,22 @@
       <img class="logo logo__header_white" src="<%=require('./images/NewsExplorer-white.svg').default%>" alt="Лого">
       </a>
       <nav class="header__menu">
-        <a href="/" class="header__menu-item header__menu-item_active">Главная</a>
-        <a href="/mynews.html" class="header__menu-item header__menu-item_hidden">Сохраненные статьи</a>
-        <div class="header__menu-item header__menu-button header__menu-button-login header__menu-item_hidden">Авторизоваться</div>
-        <div class="header__menu-item header__menu-button header__menu-button-logout header__menu-item_hidden">Михаил</div>
+        <ul class="header__menu-wrapper">
+        <li class="header__menu-item header__menu-item_active"><a href="/" class="header__menu-link">Главная</a></li>
+        <li class="header__menu-item header__menu-item_hidden"><a href="/mynews.html" class="header__menu-link">Сохраненные статьи</a></li>
+        <li class="header__menu-item header__menu-button header__menu-button-login header__menu-item_hidden">Авторизоваться</li>
+        <li class="header__menu-item header__menu-button header__menu-button-logout header__menu-item_hidden">Михаил</li>
+      </ul>
       </nav>
         <img src="<%=require('./images/hamburger.svg').default%>" alt="Открыть меню" class="header__menu-mobile_button header__menu-mobile_button-opener">
         <img src="<%=require('./images/close.svg').default%>" alt="Закрыть меню" class="header__menu-mobile_button header__menu-mobile-closer header__menu-mobile_button-closer_hidden">
         <nav class="header__menu-mobile header__menu-mobile-hidden">
-          <div class="header__menu-mobile-wrapper">
-          <a href="/" class="header__menu-mobile-item">Главная</a>
-          <a href="/mynews.html" class="header__menu-mobile-item ">Сохраненные статьи</a>
-          <div class="header__menu-item-mobile header__menu-mobile-button header__menu-mobile-button-login header__menu-item_hidden">Авторизоваться</div>
-          <div class="header__menu-item-mobile header__menu-mobile-button header__menu-mobile-button-logout header__menu-item_hidden">Михаил</div>
-        </div>
+          <ul class="header__menu-mobile-wrapper">
+            <li class="header__menu-mobile-item"><a href="/" class="header__menu-link">Главная</a></li>
+            <li class="header__menu-mobile-item"><a href="/mynews.html" class="header__menu-link">Сохраненные статьи</a></li>
+              <li class="header__menu-item-mobile header__menu-mobile-button header__menu-mobile-button-login header__menu-item_hidden">Авторизоваться</li>
+            <li class="header__menu-item-mobile header__menu-mobile-button header__menu-mobile-button-logout header__menu-item_hidden">Михаил</li>
+        </ul>
         </nav>
 
     </div>
@@ -132,7 +134,7 @@
         <img src="<%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close">
         <div class="popup__content-wrapper">
           <h3 class="popup__title">Регистрация</h3>
-          <form class="popup__form popup__form-signup" name="signup" novalidate>
+          <form class="popup__form popup__form-signup" name="signup">
             <div class="popup__form-input-wrapper">
               <p class="popup__form-label">Email</p>
               <input type="email" name="email" class="popup__input popup__input_name" placeholder="Введите почту" required>
@@ -161,7 +163,7 @@
         <img src="<%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close">
         <div class="popup__content-wrapper">
           <h3 class="popup__title">Вход</h3>
-          <form class="popup__form popup__form-signin" name="signin" novalidate>
+          <form class="popup__form popup__form-signin" name="signin">
             <div class="popup__form-input-wrapper">
               <p  class="popup__form-label">Email</p>
               <input type="email" name="email" class="popup__input popup__input_name" placeholder="Введите почту" required>

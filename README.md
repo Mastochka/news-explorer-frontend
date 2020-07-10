@@ -1,7 +1,6 @@
-# news-explorer-frontend
+# mastochka.github.io/news-explorer-frontend/
 # Фронтенд для сервиса по поиску русскоязычных новостей
 Двухстраничный сайт для поиска и сохранения новостей в личном кабинете
-Сайт опубликован на GH Pages по адресу mastochka.github.io/news-explorer-frontend/
 ## Технологии
 Сайт сверстан на flex/grid layout с БЭМ неймингом, для сборки и публикации использован вебпак
 ## TODO
