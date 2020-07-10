@@ -1,0 +1,223 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  border-radius: 15px;
+  background: #ffffff;
+  position: relative;
+  transition: 0.2s ease-in;
+  height: 576px;
+}
+
+.article:hover {
+  box-shadow: 2px 2px 8px #000000;
+}
+
+.article__image {
+  max-height: 272px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+
+.article__selector {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-image: url('../images/article-icon.svg');
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.article__selector:hover {
+  cursor: url('../images/lapka.svg'), pointer;
+  background-image: url('../images/article-icon-hover.svg');
+}
+
+.article__selector_marked {
+  background-image: url('../images/article-icon-marked.svg');
+}
+
+.article__selector-text {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 40px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  border-radius: 10px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 45px;
+  margin-top: 0;
+}
+
+.article__selector:hover .article__selector-text {
+  display: flex;
+}
+
+.article__link {
+  display: block;
+  text-decoration: none;
+}
+
+.article__link:hover {
+  cursor: url('../images/lapka.svg'), pointer;
+}
+
+.article__info {
+  margin: 0 24px;
+}
+
+.article__date {
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  margin-bottom: 12px;
+  font-family: 'SourceSansPro', Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.article__title {
+  font-family: 'Roboto-Slab', Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.article__text {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  margin-bottom: 18px;
+  margin-top: 0;
+  max-height: 110px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article__source {
+  font-family: 'Roboto-Slab', Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.article__selector_trash {
+  background-image: url('../images/trash.svg');
+}
+
+.article__selector_trash:hover {
+  background-image: url('../images/trash-hover.svg');
+}
+
+.article__selector-text_delete {
+  font-size: 12px;
+  width: 159px;
+}
+
+.article__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  height: 40px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 0 10px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 120px;
+}
+
+/*tablets*/
+
+@media (max-width: 835px) {
+  .article {
+    width: 224px;
+    height: 420px;
+  }
+  .article__info {
+    margin: 0 16px;
+  }
+  .article__image {
+    width: 224px;
+    height: 150px;
+  }
+  .article__text {
+    height: 88px;
+    margin: 10px 0 12px;
+    -webkit-line-clamp: 4;
+  }
+  .article__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .article__date {
+    padding-top: 16px;
+  }
+  .article__selector {
+    top: 8px;
+    right: 8px;
+  }
+  .article__selector:hover .article__selector-text {
+    display: none;
+  }
+  .article__tag {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+/*mobile*/
+
+@media (max-width: 500px) {
+  .article {
+    width: 288px;
+    height: 440px;
+  }
+  .article__image {
+    width: 288px;
+    height: 196px;
+  }
+  .article__selector {
+    top: 16px;
+    right: 16px;
+  }
+  .article__tag {
+    top: 16px;
+    left: 16px;
+  }
+}
