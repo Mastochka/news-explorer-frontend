@@ -1,0 +1,16 @@
+.saved-articles {
+  width: 100%;
+  background: #f5f6f7;
+}
+
+.saved-articles__wrapper {
+  margin: 62px 104px;
+}
+
+/*tablets*/
+
+@media (max-width: 835px) {
+  .saved-articles__wrapper {
+    margin: 32px 40px;
+  }
+}

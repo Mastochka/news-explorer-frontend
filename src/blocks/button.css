@@ -1,0 +1,99 @@
+.button {
+  border-radius: 80px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  height: 64px;
+  border: none;
+  transition: 0.2s ease-in;
+}
+
+.button:hover {
+  cursor: url('../images/lapka.svg'), pointer;
+}
+
+.button__search {
+  background: #2F71E5;
+  border: none;
+  border-radius: 100px;
+  width: 168px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.button__search:hover {
+  background-color: #347eff;
+}
+
+.button__search:active {
+  background-color: #2A65CC;
+}
+
+.button__showmore {
+  display: block;
+  margin: 48px auto 0;
+  background: #FFFFFF;
+  color: #1a1b22;
+  width: 228px;
+}
+
+.button_hidden {
+  display: none;
+}
+
+.button__showmore:hover {
+  opacity: 0.9;
+}
+
+.button__popup {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.button__popup:hover {
+  background: #2F71E5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+}
+
+.button__popup:disabled {
+  background: #E6E8EB;
+  color: #B6BCBF;
+  box-shadow: none;
+}
+
+/*tablets*/
+
+@media (max-width: 835px) {
+  .button__search {
+    width: 160px;
+    height: 56px;
+  }
+  .button__showmore {
+    width: 240px;
+    height: 56px;
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
+}
+
+/*mobile*/
+
+@media (max-width:500px) {
+  .button__search {
+    position: static;
+    width: 288px;
+  }
+  .button__showmore {
+    width: 288px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .button__popup {
+    width: 288px;
+    display: block;
+  }
+}

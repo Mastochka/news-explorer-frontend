@@ -1,0 +1,24 @@
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 16px;
+  justify-content: space-evenly;
+}
+
+/*tablets*/
+
+@media (max-width: 835px) {
+  .articles {
+    grid-template-columns: repeat(auto-fill, 224px);
+    grid-gap: 6px;
+  }
+}
+
+/*mobile*/
+
+@media (max-width: 500px) {
+  .articles {
+    grid-template-columns: repeat(auto-fill, 288px);
+    grid-gap: 10px;
+  }
+}

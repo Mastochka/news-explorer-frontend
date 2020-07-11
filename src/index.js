@@ -1,0 +1,23 @@
+import './style.css';
+import './images/NewsExplorer-white.svg';
+import './images/NewsExplorer-black.svg';
+import './images/search-bg.jpg';
+import './images/search-bg-mobile.jpg';
+import './images/lapka.svg';
+import './images/logout-white.svg';
+import './images/logout-black.svg';
+import './images/image_08.jpg';
+import './images/article-icon.svg'
+import './images/article-icon-hover.svg'
+import './images/article-icon-marked.svg'
+import './images/author-photo.jpg'
+import './images/gh-icon.svg'
+import './images/fb.svg'
+import './images/notfound.svg'
+import './images/close.svg'
+import './images/trash.svg'
+import './images/trash-hover.svg'
+import './images/hamburger.svg'
+import './images/hamburger-black.svg'
+import './images/favicon.svg'
+

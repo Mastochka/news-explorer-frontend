@@ -1,0 +1,50 @@
+@import url(./vendor/fonts.css);
+@import url(./blocks/article.css);
+@import url(./blocks/articles.css);
+@import url(./blocks/saved-articles.css);
+@import url(./blocks/account-info.css);
+@import url(./blocks/author.css);
+@import url(./blocks/button.css);
+@import url(./blocks/footer.css);
+@import url(./blocks/header.css);
+@import url(./blocks/logo.css);
+@import url(./blocks/popup.css);
+@import url(./blocks/results.css);
+@import url(./blocks/search.css);
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', Times, 'Times New Roman', serif;
+}
+
+.logo__header_white {
+  margin-top: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*tablets*/
+
+@media (max-width: 835px) {
+  .body {
+    max-width: 835px;
+  }
+}
+
+/*mobile*/
+
+@media (max-width: 500px) {
+  .body {
+    max-width: 500px;
+  }
+}

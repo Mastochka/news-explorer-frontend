@@ -1,0 +1,12 @@
+.logo {
+  position: relative;
+  z-index: 10;
+}
+
+/*mobile*/
+
+@media (max-width: 500px) {
+  .logo {
+    height: 20px;
+  }
+}
