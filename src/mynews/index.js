@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
     .then((userData) => {
       if (userData.message === serverMessages.unauthorized || !userData) {
         //если куки нет, возвращаем на главную
-        document.location.href = 'https://mastochka.github.io/news-explorer-frontend/';
+        document.location.href = '/';
         return Promise.reject(userData);
       }
       else {
@@ -113,7 +113,7 @@ logoutButton.addEventListener('click', ()=> {
   userApi.logout()
   .then((data)=> {
     if (data.message === serverMessages.logout)
-    document.location.href = 'https://mastochka.github.io/news-explorer-frontend/';
+    document.location.href = '/';
     else Promise.reject(data);
   })
   .catch(err => errorShow(errorBlock, err.message || err))
