@@ -11,6 +11,7 @@
 @import url(./blocks/popup.css);
 @import url(./blocks/results.css);
 @import url(./blocks/search.css);
+@import url(./blocks/error-block.css);
 @keyframes spin {
   100% {
     transform: rotate(360deg);

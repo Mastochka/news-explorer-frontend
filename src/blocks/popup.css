@@ -59,7 +59,9 @@
   height: 64px;
   margin-bottom: 16px;
 }
-
+.popup__button-wrapper{
+  height: 84px;
+}
 .popup__input {
   width: 358px;
   border: none;
@@ -142,10 +144,11 @@
   cursor: url('../images/lapka.svg'), pointer;
 }
 
-.popup__input-error-signup {
+.popup__input-server-error {
   display: block;
   text-align: center;
   margin-bottom: 8px;
+  height: 15px;
 }
 
 /*tablets*/
