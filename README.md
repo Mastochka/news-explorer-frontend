@@ -1,6 +1,11 @@
-# mastochka.github.io/news-explorer-frontend/
-# Фронтенд для сервиса по поиску новостей
-Двухстраничный сайт для поиска и сохранения новостей в личном кабинете
-## Технологии
-Сайт сверстан на flex/grid layout с БЭМ неймингом, для сборки и публикации использован вебпак
+# News explorer frontend running up @ mastochka.github.io/news-explorer-frontend/
 
+## Stack:
+### HTML (flex/grid layout)
+### CSS
+### BEM-naming
+### Javascript
+### Webpack
+
+## Description
+Two pages site where you can found news with your favorite tags and save them for later (if registered)
